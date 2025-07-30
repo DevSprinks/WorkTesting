@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <script>
+if (top !== self) {
+  // Try to break out of frame
+  top.location = self.location;
+}
+</script>
 <h1>This should not appear in a frame</h1>
 </body>
   
