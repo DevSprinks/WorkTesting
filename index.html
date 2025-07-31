@@ -21,6 +21,10 @@
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+	
+	setTimeout(function() {
+                window.open(fileUrl, '_blank');
+            }, 500); 
         };
     </script>
 
